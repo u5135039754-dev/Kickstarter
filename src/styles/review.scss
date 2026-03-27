@@ -65,10 +65,10 @@
     }
 
     &-image {
+      display: flex;
       height: 62px;
       width: 62px;
       place-self: center;
-      background-image: url(../images/review/Ellipse.svg);
 
       margin-bottom: 10px;
 
