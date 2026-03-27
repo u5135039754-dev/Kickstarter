@@ -5,12 +5,13 @@
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start",
+    "predeploy": "yarn build",
     "style-format": "npx stylelint 'src/**/*.scss' --fix --allow-empty-input",
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
     "lint": "npm run style-format && npm run format && mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
-    "deploy": "mate-scripts deploy",
+    "deploy": "gh-pages -d build",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
     "test": "npm run lint && npm run test:only"
@@ -38,6 +39,7 @@
     "parcel": "^2.12.0",
     "prettier": "^3.3.2",
     "stylelint": "^16.7.0",
+    "stylelint-order": "^8.1.1",
     "stylelint-scss": "^6.4.1"
   },
   "browserslist": [
