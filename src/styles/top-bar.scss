@@ -1,0 +1,106 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  padding-block: 25px;
+
+  @include on-tablet {
+    margin-bottom: 100px;
+  }
+
+  &__logo {
+    height: 26px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 30px;
+
+    align-items: center;
+  }
+
+  &__specs {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    color: #4f4f4f;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__lang {
+    @include on-tablet {
+      display: flex;
+      gap: 3px;
+    }
+  }
+
+  &__specs-lang {
+    display: none;
+    gap: 20px;
+    align-items: center;
+
+    @include on-tablet {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  &__ua {
+    color: #828282;
+    font-weight: 300;
+    text-decoration: none;
+  }
+
+  &__en {
+    color: #333;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  &__button {
+    display: none;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+
+    @include on-tablet {
+      display: block;
+      width: 100px;
+    }
+
+    &-link {
+      display: static;
+      text-decoration: none;
+
+      @include on-tablet {
+        display: grid;
+      }
+    }
+
+    &-buy {
+      height: 48px;
+      background-color: #333;
+      border: none;
+      cursor: pointer;
+
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: #131313;
+        transition: 0.5s;
+      }
+
+      &:active {
+        background-color: #d0d0d0;
+      }
+    }
+  }
+}

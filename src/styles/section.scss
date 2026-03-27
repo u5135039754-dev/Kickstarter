@@ -1,0 +1,52 @@
+.section {
+  margin-bottom: 110px;
+
+  &-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+
+    @include on-tablet {
+      line-height: 46px;
+      font-size: 36px;
+    }
+
+    @include on-desktop {
+      line-height: 70px;
+      font-size: 56px;
+    }
+  }
+
+  @include on-tablet {
+    margin-bottom: 140px;
+  }
+
+  @include on-desktop {
+    margin-bottom: 170px;
+  }
+}
+
+.img__meet {
+  padding-inline: 12px;
+
+  position: relative;
+
+  place-content: center;
+
+  @include on-tablet {
+    @include content-padding-inline;
+  }
+
+  @include on-desktop {
+    height: 520px;
+    width: 846px;
+  }
+
+  &-luna {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+  }
+}

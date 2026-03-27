@@ -1,0 +1,107 @@
+.menu {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #f9f9f9;
+
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &__top {
+    position: sticky;
+    margin-bottom: 40px;
+    top: 0;
+    z-index: 1;
+
+    @include on-tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__specs {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    color: #4f4f4f;
+
+    text-decoration: none;
+  }
+
+  &__specs-lang {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    @include on-tablet {
+      display: none;
+    }
+  }
+
+  &__ua {
+    color: #828282;
+    font-weight: 300;
+    text-decoration: none;
+  }
+
+  &__en {
+    color: #333;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  &__button {
+    @include page-grid;
+
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+
+    left: 0;
+    bottom: 30px;
+
+    @include on-tablet {
+      display: none;
+    }
+
+    &-link {
+      @include content-padding-inline;
+
+      grid-column: span 5;
+
+      text-decoration: none;
+
+      @include on-tablet {
+        grid-column: 2 / 6;
+      }
+
+      @include on-desktop {
+        grid-column: 5 / 10;
+      }
+    }
+
+    &-buy {
+      height: 48px;
+      width: 100%;
+      background-color: #333;
+      border: none;
+      cursor: pointer;
+
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+
+      &:hover {
+        background-color: #131313;
+        transition: 0.5s;
+      }
+
+      &:active {
+        background-color: #d0d0d0;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.benefits {
+  &-content {
+    display: grid;
+    row-gap: 40px;
+
+    @include on-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      justify-items: center;
+    }
+
+    @include on-desktop {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 30px;
+      justify-items: stretch;
+    }
+  }
+
+  &-benefit {
+    padding: 15px 10px 5px;
+    text-align: center;
+    place-items: center;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+
+  &__title {
+    color: #333;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+
+    height: 66px;
+  }
+
+  &__discription {
+    margin: 0;
+
+    color: #7c7c7c;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  &-icon {
+    display: block;
+    background-position: 50%;
+    height: 48px;
+    width: 50px;
+
+    background-repeat: no-repeat;
+
+    margin-bottom: 30px;
+
+    @include on-desktop {
+      height: 50px;
+      width: 70px;
+    }
+  }
+}
+
+.--mobile-off {
+  display: none;
+
+  @include on-tablet {
+    display: block;
+  }
+}
