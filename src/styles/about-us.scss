@@ -1,0 +1,186 @@
+.about__us {
+  &-article {
+    margin-bottom: 110px;
+
+    @include on-tablet {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    @include on-desktop {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 30px;
+    }
+  }
+
+  &-container {
+    @include content-padding-inline;
+
+    @include on-tablet {
+      padding-inline: 0;
+    }
+
+    @include on-desktop {
+      padding-inline: 123px;
+    }
+  }
+
+  &-container-right {
+    grid-column: 5 / 9;
+
+    @include on-tablet {
+      padding-right: 34px;
+    }
+
+    @include on-desktop {
+      grid-column: 7 / 13;
+    }
+  }
+
+  &-container-left {
+    grid-column: span 4;
+
+    @include on-tablet {
+      @include content-padding-inline;
+    }
+
+    @include on-desktop {
+      padding-inline: 0;
+      grid-column: span 6;
+    }
+  }
+
+  &-image {
+    display: block;
+    height: 210px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-bottom: 20px;
+
+    &--future {
+      background-image: url(../images/about-us/future-mobile.png);
+
+      &-tablet {
+        background-image: url(../images/about-us/tablet.png);
+
+        @include on-tablet {
+          grid-column: span 4;
+        }
+      }
+
+      &-desktop {
+        background-image: url(../images/about-us/desktop.png);
+
+        @include on-desktop {
+          grid-column: span 6;
+        }
+      }
+    }
+
+    &--eye {
+      background-image: url(../images/about-us/eye-mobile.png);
+
+      &-tablet {
+        background-image: url(../images/about-us/tablet-eye.png);
+
+        @include on-tablet {
+          grid-column: 5 / 9;
+        }
+      }
+
+      &-desktop {
+        background-image: url(../images/about-us/desktop-eye.png);
+
+        @include on-desktop {
+          grid-column: 7 / 13;
+        }
+      }
+    }
+
+    &-tablet {
+      display: none;
+      height: 415px;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @include on-tablet {
+        display: block;
+      }
+
+      @include on-desktop {
+        display: none;
+      }
+    }
+
+    @include on-tablet {
+      display: none;
+    }
+
+    &-desktop {
+      display: none;
+      height: 388px;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @include on-tablet {
+        display: none;
+      }
+
+      @include on-desktop {
+        display: block;
+      }
+    }
+  }
+
+  &-title {
+    margin-bottom: 30px;
+  }
+
+  &-description {
+    margin: 0;
+    color: #7c7c7c;
+    font-size: 14px;
+    line-height: 21px;
+
+    margin-bottom: 30px;
+
+    @include on-tablet {
+      line-height: 24px;
+      font-size: 16px;
+    }
+  }
+
+  &-link {
+    color: #0db2b3;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      top: 5px;
+      height: 1px;
+      background-color: #0db2b3;
+      width: 52px;
+      transition: 0.3s;
+
+      transform-origin: left;
+    }
+
+    &:hover::after {
+      width: 125px;
+    }
+  }
+}

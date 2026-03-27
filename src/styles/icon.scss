@@ -1,0 +1,87 @@
+.icon {
+  display: block;
+  height: 32px;
+  width: 32px;
+  background-size: cover;
+  transition: transform 0.3s;
+
+  &--menu {
+    background-image: url(../images/icons/Icon-Burger-menu.svg);
+
+    @include on-desktop {
+      display: none;
+    }
+  }
+
+  &--close {
+    background-image: url(../images/icons/Icon-Close.svg);
+  }
+
+  &--benefit-disign {
+    background-image: url(../images/icons/design.svg);
+  }
+
+  &--benefit-Speaker {
+    background-image: url(../images/icons/sound.svg);
+  }
+
+  &--benefit-Multiroom {
+    background-image: url(../images/icons/wifi.svg);
+  }
+
+  &--benefit-Lighting {
+    background-image: url(../images/icons/sun.svg);
+  }
+
+  &__slider {
+    display: block;
+    height: 14px;
+    width: 48px;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+
+    &-left {
+      background-image: url(../images/icons/slider-left.svg);
+
+      &:hover {
+        background-image: url(../images/icons/slider-hover-left.svg);
+      }
+    }
+
+    &-right {
+      background-image: url(../images/icons/slider-right.svg);
+
+      &:hover {
+        background-image: url(../images/icons/slider-hover-right.svg);
+      }
+    }
+  }
+
+  &__footer {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  &-fb {
+    background-image: url(../images/icons/FB.svg);
+  }
+
+  &-ig {
+    background-image: url(../images/icons/IG.svg);
+  }
+
+  &-tw {
+    background-image: url(../images/icons/TW.svg);
+  }
+
+  &-go-up {
+    background-image: url(../images/icons/go-up.svg);
+    display: none;
+    background-repeat: no-repeat;
+
+    @include on-tablet {
+      display: block;
+    }
+  }
+}

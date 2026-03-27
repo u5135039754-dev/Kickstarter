@@ -1,0 +1,123 @@
+.questions {
+  &__container {
+    @include content-padding-inline;
+  }
+
+  &__content {
+    @include page-grid;
+  }
+
+  &__title {
+    margin: 0;
+
+    margin-bottom: 27px;
+
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      margin-bottom: 0;
+
+      grid-column: span 4;
+    }
+
+    @include on-desktop {
+      margin-bottom: 0;
+
+      grid-column: span 6;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    grid-column: span 4;
+
+    @include on-tablet {
+      grid-column: 5 / 9;
+    }
+
+    @include on-desktop {
+      grid-column: 7 / 13;
+    }
+  }
+
+  &__input {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    padding-left: 20px;
+
+    outline: none;
+
+    @include on-desktop {
+      padding-left: 35px;
+    }
+  }
+
+  &__text {
+    border: 1px solid #828282;
+
+    height: 110px;
+
+    margin-bottom: 10px;
+
+    padding-top: 12px;
+
+    @include on-tablet {
+      height: 185px;
+    }
+
+    @include on-desktop {
+      padding-top: 16px;
+
+      height: 105px;
+    }
+  }
+
+  // &__input::-ms-input-placeholder {
+  //   color: #BDBDBD;
+  // }
+
+  &__email {
+    height: 48px;
+    border: 1px solid #828282;
+
+    &:active {
+      border: 1px solid #0c797a;
+    }
+  }
+
+  &__button-buy {
+    color: #fff;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    width: 123px;
+    height: 48px;
+
+    background-color: #0db2b3;
+
+    border-style: none;
+    outline: none;
+    transition: 0.5s;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0c797a;
+      transition: 0.5s;
+    }
+
+    &:active {
+      background-color: #cfeff0;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.review {
+  // &__bg-image {
+  //   background-image: url(../images/review/Vector.svg);
+
+  //   @include on-tablet {
+
+  //   }
+  // }
+
+  &-container {
+    @include content-padding-inline;
+  }
+
+  &-content {
+    @include page-grid;
+  }
+
+  &__text {
+    // content: '';
+
+    display: block;
+    align-content: end;
+
+    padding-top: 45px;
+
+    text-align: center;
+
+    background-image: url(../images/review/Vector.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    margin-bottom: 30px;
+
+    @include on-tablet {
+      margin-bottom: 40px;
+    }
+
+    @include on-desktop {
+      padding-inline: 200px;
+
+      margin-bottom: 0;
+
+      padding-bottom: 45px;
+    }
+  }
+
+  &__text q {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    @include on-tablet {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  &__director {
+    @include on-desktop {
+      position: relative;
+      top: -10px;
+    }
+
+    &-image {
+      height: 62px;
+      width: 62px;
+      place-self: center;
+      background-image: url(../images/review/Ellipse.svg);
+
+      margin-bottom: 10px;
+
+      @include on-tablet {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+
+    &-position {
+      color: #7c7c7c;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+    }
+  }
+}

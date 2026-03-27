@@ -1,7 +1,28 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import 'header';
+@import 'top-bar';
+@import 'icon';
+@import 'menu';
+@import 'page';
+@import 'nav';
+@import 'menu__desktop';
+@import 'benefits';
+@import 'section';
+@import 'about-us';
+@import 'review';
+@import 'features';
+@import 'questions';
+@import 'footer';
 
 body {
-  background: $c-gray;
+  margin: 0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+
+  background-color: #f7f7f7;
+}
+
+* {
+  font-family: Inter, Arial, Helvetica, sans-serif;
 }
