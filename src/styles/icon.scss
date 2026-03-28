@@ -18,19 +18,27 @@
   }
 
   &--benefit-disign {
+    display: flex;
     background-image: url(../images/icons/design.svg);
+    place-content: center;
   }
 
   &--benefit-Speaker {
+    display: flex;
     background-image: url(../images/icons/sound.svg);
+    place-content: center;
   }
 
   &--benefit-Multiroom {
+    display: flex;
     background-image: url(../images/icons/wifi.svg);
+    place-content: center;
   }
 
   &--benefit-Lighting {
+    display: flex;
     background-image: url(../images/icons/sun.svg);
+    place-content: center;
   }
 
   &__slider {

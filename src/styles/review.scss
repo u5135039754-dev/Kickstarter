@@ -59,6 +59,9 @@
   }
 
   &__director {
+    display: grid;
+    place-content: center;
+
     @include on-desktop {
       position: relative;
       top: -10px;
