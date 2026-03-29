@@ -167,6 +167,7 @@
     text-decoration: none;
 
     &::after {
+      z-index: -1;
       content: '';
       display: block;
       position: relative;
