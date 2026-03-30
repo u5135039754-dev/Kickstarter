@@ -73,7 +73,14 @@
       width: 62px;
       place-self: center;
 
+      transition: 0.3s;
+
       margin-bottom: 10px;
+
+      &:hover {
+        transition: 0.3s;
+        transform: scale(1.2);
+      }
 
       @include on-tablet {
         margin-bottom: 20px;

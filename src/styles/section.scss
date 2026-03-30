@@ -28,7 +28,7 @@
 }
 
 .img__meet {
-  z-index: -1;
+  z-index: 0;
   padding-inline: 12px;
 
   position: relative;
@@ -49,5 +49,12 @@
     width: 100%;
 
     object-fit: cover;
+
+    transition: 1s;
+
+    &:hover {
+      transition: 1s;
+      transform: scale(1.1);
+    }
   }
 }

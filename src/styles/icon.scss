@@ -69,6 +69,13 @@
     display: block;
     width: 24px;
     height: 24px;
+
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.2);
+    }
   }
 
   &-fb {

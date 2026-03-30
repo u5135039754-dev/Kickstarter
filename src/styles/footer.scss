@@ -16,10 +16,16 @@
 
   &__logo {
     display: none;
+    transition: 0.3s;
 
     &-link {
       display: flex;
       justify-content: center;
+    }
+
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.2);
     }
 
     @include on-tablet {

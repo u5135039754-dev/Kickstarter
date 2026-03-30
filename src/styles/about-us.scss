@@ -61,6 +61,8 @@
 
     margin-bottom: 20px;
 
+
+
     &--future {
       background-image: url(../images/about-us/future-mobile.png);
 
@@ -73,7 +75,13 @@
       }
 
       &-desktop {
+        transition: 0.3s;
         background-image: url(../images/about-us/desktop.png);
+
+        &:hover {
+          transition: 0.3s;
+          transform: scale(0.9);
+        }
 
         @include on-desktop {
           grid-column: span 6;
@@ -93,7 +101,13 @@
       }
 
       &-desktop {
+        transition: 0.3s;
         background-image: url(../images/about-us/desktop-eye.png);
+
+        &:hover {
+          transition: 0.3s;
+          transform: scale(0.9);
+        }
 
         @include on-desktop {
           grid-column: 7 / 13;
